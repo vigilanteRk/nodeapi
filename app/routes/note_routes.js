@@ -1,3 +1,9 @@
+// In Express: Routes(req.) are wrapped in a function() which takes Express instace(app) and    Database(db) as an argument
+// ex: module.exports = function(app, db){}
+
+// MongoDB doen't requires not just id as an String but id as an Object. 
+// thus requring ObjectId in var
+
 var ObjectId = require('mongodb').ObjectID
 
 module.exports = function(app, db){
